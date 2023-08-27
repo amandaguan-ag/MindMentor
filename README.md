@@ -1,46 +1,43 @@
-# AI Voicebot Mental Consultant
+# MindMentor: AI Voicebot Mental Consultant
 
 ## Project Description
-The AI Voicebot Mental Consultant aims to provide immediate, personalized mental health support to individuals in need. Utilizing advanced AI and natural language processing, the voicebot will engage users in conversation, offering empathy, guidance, and resources tailored to their specific mental well-being needs.
-
----
-
-## MVP Features
-- Voice Interaction
-- Mental Health Assessment
-- Resource Recommendation
-- Privacy and Security
-
----
+MindMentor is an AI-powered voicebot designed to offer mental health consultations, stress management tips, and mindfulness exercises. The voicebot aims to provide immediate, confidential support for individuals seeking mental well-being.
 
 ## Technologies Used
-- React
-- JavaScript
-- Python
-- Tailwind
-- FastAPI
-- OpenAI API
+- Frontend: React
+- Backend: FastAPI
+- Voice Recognition and Response: ChatGPT, Eleven Labs
+- Data Storage: MySQL
+- Security: JWT, HTTPS
+- APIs: OpenAI's Whisper
 
----
+## MVP Features
+- User Authentication
+- Voice Recognition
+- Mental Health Assessment
+- Consultation
+- Mindfulness Exercises
+- Feedback Loop
 
 ## Stretch Goals
-- Multilingual Support
-- Integration with Wearable Devices
-- Advanced Personfalization
-- Professional Network Integration
-- Community Building
+- Multi-language Support
+- Advanced Analytics
+- Integration with Wearables
+- Telehealth Integration
+- Community Forum
 
 ---
 
-## Research & Planning Log
+### Research & Planning Log
 
-### Friday, 08/25
+#### Friday, 08/25
 * 9:00: Review ChatGPT AI Voice Chatbot Build with React and FAST API Combo
 * 9:30: Research NLP libraries and OpenAI API documentation
 * 10:30: Experiment with OpenAI API using Postman
 * 11:30: Review FastAPI documentation for backend setup
----
 
-## Additional Notes
-
+#### Saturday, 08/26
+* **8:20:** Review yesterday's work and plan today's tasks.
+* **9:00:** Research frontend libraries for voice input and output.
+* **10:30:** Try out React libraries for voice recognition.
 ---
