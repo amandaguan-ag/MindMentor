@@ -14,19 +14,19 @@ The AI Voicebot Mental Consultant aims to provide immediate, personalized mental
 ---
 
 ## Technologies Used
-- Natural Language Processing (NLP)
-- Voice Recognition and Synthesis
 - React
+- JavaScript
+- Python
+- Tailwind
 - FastAPI
 - OpenAI API
-- Secure Data Encryption
 
 ---
 
 ## Stretch Goals
 - Multilingual Support
 - Integration with Wearable Devices
-- Advanced Personalization
+- Advanced Personfalization
 - Professional Network Integration
 - Community Building
 

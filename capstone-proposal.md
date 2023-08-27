@@ -1,60 +1,56 @@
 # Capstone Proposal
 
 ## Name of Student:
-Amanda Guan
+[Your Name Here]
 
 ## Name of Project:
-AI Voicebot Mental Consultant
+MindMentor: AI Voicebot Mental Consultant
 
 ---
 
-## Project's Purpose or Goal: 
-The AI Voicebot Mental Consultant aims to provide immediate, personalized mental health support to individuals in need. The voicebot will engage users in conversation, offering empathy, guidance, and resources tailored to their specific mental well-being needs. 
+## Project's Purpose or Goal:
+To develop an AI-powered voicebot named "MindMentor" that offers mental health consultations, stress management tips, and mindfulness exercises. The voicebot aims to provide immediate, confidential support for individuals seeking mental well-being.
 
 ---
 
 ## List the absolute minimum features the project requires to meet this purpose or goal:
-
-1. Voice Interaction: Enable natural and empathetic voice interaction with users.
-2. Mental Health Assessment: Basic assessment of the user's mental state through conversation and predefined questions.
-3. Resource Recommendation: Provide appropriate resources, such as articles, videos, or contact information for professionals, based on the user's needs.
-4. Privacy and Security: Ensure all interactions are confidential and comply with relevant privacy regulations.
+1. **User Authentication:** Secure login and data encryption.
+2. **Voice Recognition:** Ability to understand and respond to user queries.
+3. **Mental Health Assessment:** Quick quizzes to gauge the user's mental state.
+4. **Consultation:** Provide basic mental health advice and stress management tips.
+5. **Mindfulness Exercises:** Guided breathing and relaxation exercises.
+6. **Feedback Loop:** Collect user feedback for continuous improvement.
 
 ---
 
 ## What tools, frameworks, libraries, APIs, modules and/or other resources will you use to create this MVP? List them all here. Be specific.
-
-- Natural Language Processing (NLP) libraries for understanding and responding to user input.
-- Voice Recognition and Synthesis libraries for human-like voice interaction.
-- React for building the user interface if there's a web component.
-- FastAPI for handling backend requests and managing data.
-- OpenAI API for leveraging pre-trained models for conversation.
-- Secure Data Encryption libraries to maintain user privacy and confidentiality.
+- **Frontend:** React
+- **Backend:** FastAPI
+- **Voice Recognition and Response:** ChatGPT for text-based conversation, Eleven Labs for human-like voice
+- **Data Storage:** MySQL for storing user data and session history
+- **Security:** JWT for authentication, HTTPS for data encryption
+- **APIs:** OpenAI's Whisper for voice-to-text conversion
 
 ---
 
 ## If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
-
-1. Multilingual Support: Implementing additional languages to make the voicebot accessible to non-English speakers.
-2. Integration with Wearable Devices: To monitor physiological signs that may correlate with mental states (e.g., heart rate).
-3. Advanced Personalization: Utilizing machine learning to adapt and personalize responses over time.
-4. Professional Network Integration: Enabling direct connections to mental health professionals for immediate support if needed.
-5. Community Building: Creating a supportive community platform where users can share experiences and support each other, moderated by the AI.
+1. **Multi-language Support:** Enable the bot to consult in multiple languages.
+2. **Advanced Analytics:** Use machine learning to predict user mental health trends.
+3. **Integration with Wearables:** Sync with smartwatches to use biometric data for better consultation.
+4. **Telehealth Integration:** Option to connect with a human therapist for more serious concerns.
+5. **Community Forum:** A secure platform for users to share experiences and tips.
 
 ---
 
 ## What additional tools, frameworks, libraries, APIs, or other resources will these additional features require?
-
-- Translation APIs for multilingual support.
-- SDKs for wearable device integration.
-- Machine Learning libraries for advanced personalization.
-- APIs for professional network integration.
-- Community moderation tools for the community platform.
+- **Multi-language Support:** Additional language models for ChatGPT
+- **Advanced Analytics:** Machine learning libraries like TensorFlow or PyTorch
+- **Integration with Wearables:** APIs for wearable devices
+- **Telehealth Integration:** Telehealth APIs for connecting with human therapists
+- **Community Forum:** Additional backend support for forum functionality, possibly a forum software like Discourse
 
 ---
 
 ## Is there anything else you'd like your instructor to know?
-
-[Optional: Any additional information or requests for your instructor.]
 
 ---
