@@ -52,11 +52,16 @@ async def reset_conversation():
 
 
 # Get audio
-@app.get("/post-audio-get/")
-async def get_audio():
+@app.post("/post-audio-get/")
+async def post_audio(file: UploadFile = File(...)):
 
-    #Get saved audio
-    audio_input = open("voice.mp3", "rb")
+    # #Get saved audio
+    # audio_input = open("voice.mp3", "rb")
+
+    # Save file from frontend
+    with open(file.filename, "wb") as buffer:
+        buffer.write(file.file.read())
+    audio_input = open(file.filename, "rb")
 
     # Decode audio
     message_decoded = convert_audio_to_text(audio_input)
@@ -76,6 +81,7 @@ async def get_audio():
     store_messages(message_decoded, chat_response)
 
     # Convert chat response to audio
+    print(chat_response)
     audio_output = convert_text_to_speech(chat_response)
 
     # Guard: Ensure output
@@ -87,7 +93,7 @@ async def get_audio():
         yield audio_output
 
     # Use for Post: Return output audio
-    return StreamingResponse(iterfile(), media_type="audio/mpeg")
+    return StreamingResponse(iterfile(), media_type="application/octet-stream")
 
 
 # # Post bot response
