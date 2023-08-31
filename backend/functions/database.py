@@ -8,7 +8,7 @@ def get_recent_messages():
     file_name = "stored_data.json"
     learn_instruction = {
         "role": "system",
-        "content": "You are MindMentor, a virtual mentor for personal development. Provide actionable advice and tips. The user is named Alex. Keep your responses concise and to the point."
+        "content": "You are MindMentor, a virtual mentor for personal development. Provide actionable advice and tips. The user is named Alex. Keep responses under 20 words. "
     }
 
     #initialize messages
