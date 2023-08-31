@@ -1,13 +1,61 @@
 import { useState } from "react";
 import Title from "./Title";
+import axios from "axios";
 import RecordMessage from "./RecordMessage";
 
 function Controller() {
   const [isLoading, setIsLoading] = useState(false);
   const [messages, setMessages] = useState<any[]>([]);
 
-  const createBlobURL = (data: any) => {};
-  const handleStop = async () => {};
+  function createBlobURL(data: any) {
+    const blob = new Blob([data], { type: "audio/mpeg" });
+    const url = window.URL.createObjectURL(blob);
+    return url;
+  }
+
+  const handleStop = async (blobUrl: string) => {
+    setIsLoading(true);
+
+    // Append recorded message to messages
+    const myMessage = { sender: "me", blobUrl };
+    const messagesArr = [...messages, myMessage];
+
+    // convert blob url to blob object
+    fetch(blobUrl)
+      .then((res) => res.blob())
+      .then(async (blob) => {
+        // Construct audio to send file
+        const formData = new FormData();
+        formData.append("file", blob, "myFile.wav");
+
+        // send form data to api endpoint
+        await axios
+          .post("http://localhost:8000/post-audio", formData, {
+            headers: {
+              "Content-Type": "audio/mpeg",
+            },
+            responseType: "arraybuffer", // Set the response type to handle binary data
+          })
+          .then((res: any) => {
+            const blob = res.data;
+            const audio = new Audio();
+            audio.src = createBlobURL(blob);
+
+            // Append to audio
+            const rachelMessage = { sender: "rachel", blobUrl: audio.src };
+            messagesArr.push(rachelMessage);
+            setMessages(messagesArr);
+
+            // Play audio
+            setIsLoading(false);
+            audio.play();
+          })
+          .catch((err: any) => {
+            console.error(err);
+            setIsLoading(false);
+          });
+      });
+  };
 
   return (
     <div className="h-screen overflow-y-hidden">
