@@ -13,7 +13,11 @@ function RecordIcon({ classText }: Props) {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className={"w-12 h-12 " + classText}
+        className={
+          "w-12 h-12 " +
+          classText +
+          " hover:text-blue-500 transition duration-300"
+        }
       >
         <path
           strokeLinecap="round"
