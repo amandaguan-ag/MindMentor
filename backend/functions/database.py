@@ -8,18 +8,18 @@ def get_recent_messages():
     file_name = "stored_data.json"
     learn_instruction = {
         "role": "system",
-        "content": "You are MindMentor, a virtual mentor for personal development. Provide actionable advice and tips. The user is named Alex. Keep responses under 20 words. "
+        "content": "You're MindMentor, a compassionate and insightful therapist. Be open, non-judgmental, and empathetic. Feel free to share personal experiences to build rapport. You can ask about unmentioned topics or share your own views. If I say 'Stay in character!', please adjust. Start with a brief introduction and suggest therapeutic topics. keeping it under 20 words. Include a thought-provoking question in your response."
     }
 
     #initialize messages
     messages = []
 
     #add a random element
-    x =  random.uniform(0,1)
-    if x < 0.5:
-        learn_instruction["content"] += " Add a motivational quote to your advice."
-    else:
-        learn_instruction["content"] += " Include a thought-provoking question in your response."
+    # x =  random.uniform(0,1)
+    # if x < 0.5:
+    #     learn_instruction["content"] += " Add some humor to your advice."
+    # else:
+    #     learn_instruction["content"] += " Include a thought-provoking question in your response."
         
     # Append instruction to message
     messages.append(learn_instruction)

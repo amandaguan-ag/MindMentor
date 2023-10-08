@@ -41,7 +41,7 @@ app.add_middleware(
 # Check health
 @app.get("/health")
 async def check_health():
-    return {"response": "healthy"}
+    return {"response": "healthy"} 
 
 
 # Reset message
