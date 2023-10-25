@@ -8,7 +8,7 @@ MindMentor is an AI-powered voicebot designed to offer mental health consultatio
 ![Demo](./demo.png)
 
 ## Technologies Used
-- Frontend: React
+- Frontend: React, TypeScript, EM6
 - Backend: FastAPI
 - Voice Recognition and Response: ChatGPT, Eleven Labs
 - Security: HTTPS
