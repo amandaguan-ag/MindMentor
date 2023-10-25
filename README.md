@@ -2,7 +2,7 @@
 ![MindMentor Logo](./MindMentor.png)
 
 ## Project Description
-MindMentor is an AI-powered voicebot designed to offer mental health consultations, stress management tips, and mindfulness exercises. The voicebot aims to provide immediate, confidential support for individuals seeking mental well-being.
+MindMentor is an AI-powered voicebot designed to offer mental health consultations. The voicebot aims to provide immediate, confidential support for individuals seeking mental well-being.
 
 ## Demo
 ![Demo](./demo.png)
