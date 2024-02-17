@@ -1,7 +1,7 @@
 # Capstone Proposal
 
 ## Name of Student:
-[Your Name Here]
+Amanda Guan
 
 ## Name of Project:
 MindMentor: AI Voicebot Mental Consultant
@@ -9,17 +9,14 @@ MindMentor: AI Voicebot Mental Consultant
 ---
 
 ## Project's Purpose or Goal:
-To develop an AI-powered voicebot named "MindMentor" that offers mental health consultations, stress management tips, and mindfulness exercises. The voicebot aims to provide immediate, confidential support for individuals seeking mental well-being.
+To develop an AI-powered voicebot named "MindMentor" that offers mental health consultations. The voicebot aims to provide immediate support for individuals seeking mental well-being.
 
 ---
 
 ## List the absolute minimum features the project requires to meet this purpose or goal:
 1. **User Authentication:** Secure login and data encryption.
 2. **Voice Recognition:** Ability to understand and respond to user queries.
-3. **Mental Health Assessment:** Quick quizzes to gauge the user's mental state.
-4. **Consultation:** Provide basic mental health advice and stress management tips.
-5. **Mindfulness Exercises:** Guided breathing and relaxation exercises.
-6. **Feedback Loop:** Collect user feedback for continuous improvement.
+3. **Mental Health Consultation:** Provide basic mental consulatation
 
 ---
 
@@ -27,8 +24,6 @@ To develop an AI-powered voicebot named "MindMentor" that offers mental health c
 - **Frontend:** React
 - **Backend:** FastAPI
 - **Voice Recognition and Response:** ChatGPT for text-based conversation, Eleven Labs for human-like voice
-- **Data Storage:** MySQL for storing user data and session history
-- **Security:** JWT for authentication, HTTPS for data encryption
 - **APIs:** OpenAI's Whisper for voice-to-text conversion
 
 ---
@@ -52,5 +47,7 @@ To develop an AI-powered voicebot named "MindMentor" that offers mental health c
 ---
 
 ## Is there anything else you'd like your instructor to know?
+
+N/A
 
 ---
