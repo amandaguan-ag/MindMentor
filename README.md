@@ -1,24 +1,23 @@
 # MindMentor: AI Voicebot Mental Consultant 🤖
-![MindMentor Logo](./MindMentor.png)
+<img src="./MindMentor.png" width="200" height="200">
 
 ## Project Description
 MindMentor is an AI-powered voicebot designed to offer mental health consultations. The voicebot aims to provide immediate, confidential support for individuals seeking mental well-being.
 
 ## Demo
-![Demo](./demo.png)
+<img src="./demo.png" width="50%" height="50%">
 
 ## Technologies Used
 - Frontend: React, TypeScript, EM6
 - Backend: FastAPI
 - Voice Recognition and Response: ChatGPT, Eleven Labs
-- Security: HTTPS
 - APIs: OpenAI's Whisper
 
 ## MVP Features
 - Voice Recognition
 - Consultation
 
-## Stretch Goals
+<!-- ## Stretch Goals
 - User Authentication
 - Mental Health Assessment
 - Mindfulness Exercises
@@ -27,7 +26,7 @@ MindMentor is an AI-powered voicebot designed to offer mental health consultatio
 - Advanced Analytics
 - Integration with Wearables
 - Telehealth Integration
-- Community Forum
+- Community Forum -->
 
 ## License
 This project is licensed under the MIT License 
