@@ -17,16 +17,103 @@ MindMentor is an AI-powered voicebot designed to offer mental health consultatio
 - Voice Recognition
 - Consultation
 
-<!-- ## Stretch Goals
-- User Authentication
-- Mental Health Assessment
-- Mindfulness Exercises
-- Feedback Loop
-- Multi-language Support
-- Advanced Analytics
-- Integration with Wearables
-- Telehealth Integration
-- Community Forum -->
+## Setup Instructions
+
+### Clone the Repository
+To get started, clone the repository to your local machine:
+```
+git clone https://github.com/amandaguan-ag/mindmentor.git
+```
+
+### Setup Backend
+
+1. **Change directory into backend:**
+   ```
+   cd mindmentor/backend
+   ```
+
+2. **Setup Virtual Environment:**
+   
+   - Create a virtual environment:
+     ```
+     python3 -m venv venv
+     ```
+   - Activate the virtual environment:
+     - On macOS/Linux:
+       ```
+       source venv/bin/activate
+       ```
+     - On Windows:
+       ```
+       source venv/Scripts/activate
+       ```
+
+3. **Upgrade PIP:**
+   ```
+   pip install --upgrade pip
+   ```
+
+4. **Install Python Packages:**
+   - Install the required packages:
+     ```
+     pip install fastapi "uvicorn[standard]" python-multipart openai python-decouple
+     ```
+   - Alternatively, if you have a `requirements.txt` file:
+     ```
+     pip install -r requirements.txt
+     ```
+
+5. **Create Environment Variables:**
+   - Create a `.env` file in the backend directory:
+     ```
+     touch .env
+     ```
+   - Add your API keys to the `.env` file:
+     ```
+     OPENAI_API_KEY=your-openai-api-key
+     ELEVEN_LABS_API_KEY=your-eleven-labs-api-key
+     ```
+
+6. **Start the Backend Server:**
+   - To start the server:
+     ```
+     uvicorn main:app
+     ```
+   - To start the server with hot reload:
+     ```
+     uvicorn main:app --reload
+     ```
+   - Verify the backend is running by visiting:
+     ```
+     http://localhost:8000/health
+     ```
+
+### Setup Frontend
+
+1. **Change directory into frontend:**
+   ```
+   cd ../frontend
+   ```
+
+2. **Install Packages:**
+   ```
+   yarn install
+   ```
+
+3. **Build the Application:**
+   ```
+   yarn build
+   ```
+
+4. **Start the Frontend Server:**
+   - In development mode:
+     ```
+     yarn start
+     ```
+   - Verify the frontend is running by visiting:
+     ```
+     http://localhost:3000
+     ```
 
 ## License
 This project is licensed under the MIT License 
